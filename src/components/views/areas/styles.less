@@ -1,0 +1,58 @@
+@import (reference) "common/default.less";
+
+section#home-areas {
+  position:absolute;
+  top:21vh;
+  left:0;
+  width:20%;
+  height:76vh;
+  background-color: #999;
+
+  @media @narrow, @super-narrow {
+    top: 13vh;
+    left: 0;
+    width: 100%;
+    height: 26vh;
+  }
+}
+
+section#home-areas ul.areas-list{
+    width:100%;
+}
+
+section#home-areas ul.areas-list > header {
+  color: #ccc;
+  font-weight:bold;
+  font-size:0.8em;
+  text-align:center;
+  padding: 1vh 0;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 1vh;
+}
+
+section#home-areas ul.areas-list li{
+    width: 90%;
+    margin: 2vh 5%;
+    text-align:left;
+    overflow: hidden;
+
+    @media @narrow, @super-narrow {
+      width: 46%;
+      margin: 1vh 2%;
+      text-align: left;
+      float: left;
+    }
+}
+
+section#home-areas ul.areas-list  a{
+  color: #fff;
+}
+
+section#home-areas ul.areas-list  a:hover{
+  color: #000;
+}
+
+section#home-areas ul.areas-list  a.active{
+  color: #0062bd;
+  cursor: not-allowed;
+}

@@ -1,0 +1,155 @@
+#cargando-top {
+  position:absolute;
+  z-index:30;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color: #fff
+}
+
+#cargando-top.opened {
+  height: 100%;
+  opacity: 1;
+}
+
+#cargando-top.closed {
+  -webkit-animation: fadeOut 0.5s;
+  animation: fadeOut 0.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+#cargando-top .logo {
+  position: relative;
+  width: 10vh;
+  height: 10vh;
+  top: 40vh;
+  margin:auto;
+}
+
+#cargando-top .logo img {
+  width:100%;
+  height:100%;
+
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  -ms-animation: spin 4s linear infinite;
+  -o-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+
+#cargando-top .texto-tapa {
+  position: absolute;
+  top: 52vh;
+  font-weight: bold;
+  text-align: center;
+  height: 2em;
+  right: 0;
+  width: 100%;
+  z-index:32;
+  background-color: #fff;
+
+
+  -webkit-animation: words 3s linear forwards;
+  -moz-animation: words 3s linear forwards;
+  -ms-animation: words 3s linear forwards;
+  -o-animation: words 3s linear forwards;
+  animation: words 3s linear forwards;
+}
+
+#cargando-top .texto {
+  position: absolute;
+  width: 100%;
+  top: 53vh;
+  font-weight: bold;
+  text-align: center;
+  z-index:31;
+}
+
+
+@-moz-keyframes words {
+    from { width:100%; }
+    to { width:0; }
+}
+@-webkit-keyframes words {
+  from { width:100%; }
+  to { width:0; }
+}
+@keyframes words {
+  from { width:100%; }
+  to { width:0; }
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+@-moz-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@-moz-keyframes fadeOut {
+    0% {
+      opacity: 1;
+      height:100%;
+    }
+    99% {
+      height: 100%;
+    }
+    100%
+    {
+      opacity: 0;
+      height:0;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+      opacity: 1;
+      height:100%;
+    }
+    99% {
+      height: 100%;
+    }
+    100%
+    {
+      opacity: 0;
+      height:0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+      opacity: 1;
+      height:100%;
+    }
+    99% {
+      height: 100%;
+    }
+    100%
+    {
+      opacity: 0;
+      height:0;
+    }
+}

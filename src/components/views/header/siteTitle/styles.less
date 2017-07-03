@@ -1,0 +1,69 @@
+@import (reference) "common/default.less";
+
+.main > header .site-title {
+    position: absolute;
+    top: 1vh;
+    left: 1%;
+    width: 100%;
+
+    @media @narrow {
+      width:100%;
+    }
+}
+
+.main > header .site-title .logo {
+    float:left;
+}
+
+.main > header .site-title .logo img {
+    height: 6vh;
+    cursor: pointer;
+}
+
+.main > header .site-title .logo img:hover {
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  -ms-animation: spin 4s linear infinite;
+  -o-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+.main > header .site-title .title {
+    float:left;
+    margin-left:12px;
+}
+
+.main > header .site-title .title a {
+    font-size: 2vh;
+    /* text-shadow: 1px 1px 5px #000; */
+    font-weight: bold;
+}
+
+.main > header .site-title .title .minis a {
+    color: @color-1;
+}
+
+.main > header .site-title .title .comu a {
+    color: @color-2;
+}
+
+.main > header .site-title .title a:hover {
+    color: @color-3;
+}
+
+.main > header .site-title .title .minis {
+    margin-top:0.3vh;
+}

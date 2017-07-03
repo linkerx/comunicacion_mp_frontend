@@ -1,0 +1,47 @@
+@import (reference) "common/default.less";
+
+#home-opciones {
+  position: absolute;
+  top: 8vh;
+  left: 0;
+  width: 20%;
+  height: 11vh;
+  background-color: #999;
+
+  @media @narrow, @super-narrow{
+    width: 100%;
+    height: 4vh;
+  }
+}
+
+section#home-opciones ul.opciones-list{
+    width:100%;
+    margin: 2vh 0;
+    @media @narrow, @super-narrow{
+      margin:0;
+    }
+}
+
+section#home-opciones ul.opciones-list li{
+    width: 90%;
+    margin: 2vh 5%;
+    text-align:left;
+    @media @narrow, @super-narrow {
+      width: auto;
+      margin: 1vh 5%;
+      float: left;
+    }
+}
+
+section#home-opciones ul.opciones-list  a{
+  color: #fff;
+}
+
+section#home-opciones ul.opciones-list  a:hover{
+  color: #000;
+}
+
+section#home-opciones ul.opciones-list  a.active{
+  color: #0062bd;
+  cursor: not-allowed;
+}

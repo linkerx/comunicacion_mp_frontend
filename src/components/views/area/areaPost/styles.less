@@ -1,0 +1,25 @@
+@import (reference) "common/default.less";
+
+#area article .post_content h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+#area article .post_content .image_container {
+  width:100%;
+  text-align:center;
+  margin: 2vh 0;
+}
+
+#area article .post_content .image_container img {
+  width:50%;
+
+  @media @square {
+    width:70%;
+  }
+
+  @media @narrow, @super-narrow {
+    width:90%;
+  }
+
+}

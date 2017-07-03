@@ -1,0 +1,82 @@
+@import (reference) "common/default.less";
+
+section#home-novedades {
+  position: absolute;
+  top: 2vh;
+  left: 1%;
+  height: 84vh;
+  width: 98%;
+  background-color: #fff;
+  border-radius: 1vh 1vh 0 0;
+  overflow-y: auto;
+
+  @media @narrow, @super-narrow {
+    left: 0%;
+    height: 57vh;
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+section#home-novedades > header {
+  width: 98%;
+  height: 3vh;
+  padding: 1vh 1%;
+  background-color: #0062bd;
+  border-radius: 1vh 1vh 0 0;
+  @media @narrow, @super-narrow {
+    text-align: center;
+    border-radius: 0;
+  }
+}
+
+section#home-novedades > header > span {
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+section#home-novedades ul.novedades-list {
+  width: 98%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+section#home-novedades ul.novedades-list li {
+  @media @super-wide {
+    width: 23%;
+    margin-top: 2vh;
+    margin-left: 2%;
+    height:auto;
+  }
+
+  @media @wide {
+    width: 31.33%;
+    margin-top: 2vh;
+    margin-left: 2%;
+    height:auto;
+  }
+
+  @media @square {
+    width: 48%;
+    margin-top: 2vh;
+    margin-left: 2%;
+    height:auto;
+  }
+
+  @media @narrow, @super-narrow {
+    width: 98%;
+    margin-top: 2vh;
+    margin-left: 2%;
+    height:auto;
+  }
+
+
+}
+
+section#home-novedades ul.novedades-list li article {
+  border: 1px solid #bbb;
+  border-radius: 0.3vh;
+  box-shadow: 1px 1px 4px #ccc;
+}
